@@ -50,10 +50,10 @@ end
 def update_counting_hash(hash, key)
  update_counting_hash = {}
 
-if hash[key]
-  hash[key] += 1
+if hash[keyname] == key
+  hash[keyname] += 1
 else
-  hash[key] = 1
+  hash[keyname] = 1
 end
 
 return update_counting_hash
